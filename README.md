@@ -3,7 +3,7 @@
 School of Computer Science and Engineering \
 Nanyang Technological University \
 Lab: B124 \
-Team: 5 \
+Team: 5
 
 Members:
 
