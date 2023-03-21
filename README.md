@@ -1,3 +1,18 @@
+# Price prediction of used devices
+
+School of Computer Science and Engineering
+Nanyang Technological University
+Lab: B124
+Team: 5
+
+Members:
+
+1. Lee Yao Yang
+2. Tang Ken Yi
+3. Ang Zi Yang, Alvis
+
+---
+
 ### Introduction
 
 This mini project aims to predict the price of used devices (Phones and Tablets) of various brands based on features such as Brand, Weight, Screen Size, etc.
