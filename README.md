@@ -36,6 +36,14 @@ The dataset used for this project can be found [here](https://www.kaggle.com/cod
 
 ### 1. Problem Formulation
 
+In today's technologically enabled world, smartphones and tablets have become items that we rely on. It has evolved from a luxury to a necessity that allows not only for communication, but also for learning, payments among other day to day activities. Suffice to say it has become irreplacable. But as their use becomes more ubiquitous e-waste recycling has become a necessity. Due to hazardous materials in e-waste, lack of recycling can cause environmental contamination. At the same time, as usage of phones and tablets increase, the use of precious materials increases, leading to a fall in such resources. Thus recycling has become more important than ever.
+
+In 2016, the market for used devices was valued at $17 billion dollars, with a 50% year on year growth in units. The market for used devices is one that is growing and one that we believe will impact many in the coming years. Thus we sought to help buyers and sellers estimate the value of the price of the used devices they are intending to buy or sell.
+
+The question we have thus arrived at is "What is the likely price of my phone?"
+
+This question would allow buyers and sellers to gain an understanding of the market values based on the specifications of the phones, allowing them to make the best decision when buying their phones.
+
 ### 2. Data Preparation and Cleaning
 
 ### 3. Exploratory Data Analysis
