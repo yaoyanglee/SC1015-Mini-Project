@@ -51,11 +51,11 @@ For data preparation and cleaning, we removed the NULL values and also one got e
 1. Removal of NULL values
    When we encountered NULL values, there were 2 options that we could take. First was to replace the NULL values with the mean or median. Second was to remove the NULL values.
 
-For the first case, replacing the NULL values with the mean or median was not a good option mainly due to the skew of some of the variables. During our EDA process, we found that some variables such as weight is skewed heavily. The median and mean would differ in this case. It would be difficult to determine which would more accurately represent the data. This is because there could be design or economic considerations in the development of these smart devices which result in a skew in the data. It would be difficult to determine if mean or median is best used to represent the entire dataset.
+   For the first case, replacing the NULL values with the mean or median was not a good option mainly due to the skew of some of the variables. During our EDA process, we found that some variables such as weight is skewed heavily. The median and mean would differ in this case. It would be difficult to determine which would more accurately represent the data. This is because there could be design or economic considerations in the development of these smart devices which result in a skew in the data. It would be difficult to determine if mean or median is best used to represent the entire dataset.
 
-Furthermore, when looking at the NULL values, they makeup at maximum only 5% of the data. This is a relatively small percentage given our large data size.
+   Furthermore, when looking at the NULL values, they makeup at maximum only 5% of the data. This is a relatively small percentage given our large data size.
 
-Due to the small number outliers and the difficulty in ascertaining whether mean or median is more representative of the data, our group has decided to remove the outliers.
+   Due to the small number outliers and the difficulty in ascertaining whether mean or median is more representative of the data, our group has decided to remove the outliers.
 
 2. One hot encoding
    Categorical variables were present in the dataset as well. Some exaples were whether the phone has 4G or 5G connectivity. Encoding them numerically does represent the categorical data in a numerical form, but when performing machine learning these values would be treated as numerical continuous variables. This would result in accurate variables being used as predictors for the model. Thus we performed one hot encoding on the data using the pandas method get_dummies().
