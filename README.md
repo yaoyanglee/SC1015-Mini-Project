@@ -62,6 +62,23 @@ For data preparation and cleaning, we removed the NULL values and also one got e
 
 ### 3. Exploratory Data Analysis
 
+The main aim of this section was to understand the distribution of each variable and find relationships between the independent and dependent variables.
+We used this section to determine 4 things.
+
+1. Removal of NULL values \
+   The explanation has been given above. In short we found that the data was skewed, and it is difficult to determine whether the mean or median best represented the variable for the entire dataset. Thus we decided to remove NULL values.
+
+2. Usage of Min Max Scaler vs Standard Scaler \
+   Standard Scaler is used when the data is normal, and Min Max Scaler when we know the minimum and maximum value of the variables from domain knowledge. Looking at the histograms, we find that not all variables follow a normal distribution, thus a Min Max Scaler was used.
+
+   Furthermore, the minimum and maximum values of a variable in the used devices are known, as they are recorded within the dataset, as well as in research literature or product information pages. Thus a Min Max Scaler was used.
+
+3. Importance of each variable \
+   From our EDA, we found that a majority of data points for RAM were clustered togethe at 4GB of RAM. However, upong further analysis in our bivariate data analysis, we discovered that there was indeed a relationship between the variable and price of used devices. Thus we decided to keep the variable. A possible explanation for this would be manufacturing considerations such as cost, knowledge from market research among many other factors. We also decided to keep this data, as it was representative of the data. This also reinforced the idea of removing the NULL values, as there were too many factors that were unknown to us which could have contributed to the distribution of the data with respect to each variable. We would not be able to determine if mean or median best represented the dataset for a particular variable, hence justifying the removal of the NULL values.
+
+4. Confirmation of a relationship between the variables \
+   This reassured us that the variables are related to the dependent variable, used price, which we are planning to predict. Allowing us to proceed with our regression analysis.
+
 ### 4. Feature selection
 
 ### 5. Models
