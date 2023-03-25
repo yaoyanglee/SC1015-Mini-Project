@@ -81,6 +81,10 @@ We used this section to determine 4 things.
 
 ### 4. Feature selection
 
+To determine which are the most important variables are, we need to first identify which selection model we should use. When selecting the model, we need to look at the type of data,number of features, complexity of relationships. Looking at the pairplots, we identify that the relationship is non-linear. Since the relationship between the features and the target variable (normalized_used_price) is non-linear and complex, we will use Mutual Information Regression (MIR) to find the rank the variables. We then use kbest to take the top 5 variables from the results of the MIR. Here, we have identified our top 5 variables.
+
+ Since our dataset consisted of many variables, it had a high dimensionality, which would lead to overfitting, increased computational complexity, and feature redundancy. To address this, we used PCA(Principal Component Analysis), which reduces the number of features while preserving the important information. Here, we use PCA reduce the dimensionality of the dataset, improving the accuracy and efficiency of the model.
+
 ### 5. Models
 
 ### 6. Data Driven Insights and Conclusions
