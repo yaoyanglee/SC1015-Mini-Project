@@ -46,6 +46,11 @@ This question would allow buyers and sellers to gain an understanding of the mar
 
 ### 2. Data Preparation and Cleaning
 
+For data preparation and cleaning, we removed the NULL values and also one got encoded the categorical values
+
+1. [Removal of NULL values]
+   ABCDEFG
+
 ### 3. Exploratory Data Analysis
 
 ### 4. Feature selection
