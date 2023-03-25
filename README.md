@@ -87,4 +87,21 @@ To determine which are the most important variables are, we need to first identi
 
 ### 5. Models
 
+1. Decision Tree Regression \
+   There were 2 reasons which motivated us to use this model.
+
+   First, a decision tree is not largely influenced by outliers or missing values and can handle both categorical and continuous variables. From our EDA, we found that not only were there missing values which we removed, there were also outliers that we kept. The outliers were kept as they we believed that the outliers were natural variations when it came to the production of devices, and that removal of them would significantly alter the representation of the dataset. Thus although we kept the outliers due to it being representative of the population of used devices, we did not want them to heavily affect the accuracy of the model in predicting used price.
+
+   Second, a decision tree can handle both cateogircal and continous variables. Our dataset consists of a mix of categorical and continuous variables, thus we decided that it was a good model that could give accurate predictions.
+
+2. Random Forest Regression \
+
+3. Linear Regression \
+
+4. Ridge Regression \
+
+5. Lasso Regression \
+
+6. SVM Regression \
+
 ### 6. Data Driven Insights and Conclusions
