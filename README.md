@@ -83,7 +83,7 @@ We used this section to determine 4 things.
 
 To determine which are the most important variables are, we need to first identify which selection model we should use. When selecting the model, we need to look at the type of data,number of features, complexity of relationships. Looking at the pairplots, we identify that the relationship is non-linear. Since the relationship between the features and the target variable (normalized_used_price) is non-linear and complex, we will use Mutual Information Regression (MIR) to find the rank the variables. We then use kbest to take the top 5 variables from the results of the MIR. Here, we have identified our top 5 variables.
 
- Since our dataset consisted of many variables, it had a high dimensionality, which would lead to overfitting, increased computational complexity, and feature redundancy. To address this, we used PCA(Principal Component Analysis), which reduces the number of features while preserving the important information. Here, we use PCA reduce the dimensionality of the dataset, improving the accuracy and efficiency of the model.
+Since our dataset consisted of many variables, it had a high dimensionality, which would lead to overfitting, increased computational complexity, and feature redundancy. To address this, we used PCA(Principal Component Analysis), which reduces the number of features while preserving the important information. Here, we use PCA reduce the dimensionality of the dataset, improving the accuracy and efficiency of the model.
 
 ### 5. Models
 
@@ -95,10 +95,17 @@ To determine which are the most important variables are, we need to first identi
    Second, a decision tree can handle both cateogircal and continous variables. Our dataset consists of a mix of categorical and continuous variables, thus we decided that it was a good model that could give accurate predictions.
 
 2. Random Forest Regression \
+   Random Forest is a type of Ensemble learning, which involves combining predictions from 2 or more models. Random Forest uses a specific case of Ensemble learning, known as Bootstrap aggregation or Bagging. In Bagging, the model is trained using different samples of the same training dataset. The predictions made by the ensemble of models aer then combined using simple statistics such as voting or averaging.
+
+   This model was chosen because the regression models we have learnt thus far in the course have been making predictions based only a randomised selection of training data from the original data. However, such a randomised selection could result in the data being biased. Furthermore it also mitigates against overfitting of the model and a reduction in variance. There were a few variables with a particularly high standard deviation in our dataset, thus we sought to use a model which would reduce it, allowing for a more accurate prediction.
 
 3. Linear Regression \
+   Linear Regression is a simple but effective way to analyse the used price with respect to multiple variables. after the regression models above, we were curious if the used priced had a linear relationship with the dependent variables. Finding this is important, as a simple linear relationship to the predictors would allow buyers and sellers to easily understand the price of a used device based on comparisons to other devices. This allows for an intuitive understanding of the price. Furthermore, Linear Regressions are less computationally expensive compared to Decision Trees or Ensemble learning models. If a simple and accurate linear relationship could be established, prediction would remain accurate and much faster with a larger dataset in comparison to the one we are working with.
 
 4. Ridge Regression \
+   Ridge Regression is a model tuning method used to analyse any data that suffers from multicollinearity. Multicollinearity is the case when 1 predictor is highly linearly related to another predictor. If simple linear regression is to study the effects of how each predictor affects the response, used price, then multicollinearity undermines this principle, as the predictors are not independent from each other. The regression coefficients are thus not uniquely determined, as changes in one feature results in changes in the response variable and another predictor variable. This results in an inaccurate regression model.
+
+   Thus we aim to use Ridge Regression which performs L2 regularization to reduce multicollinearity, as the effects of insignificant predictors and multicollinear predictors are reduced.
 
 5. Lasso Regression \
 
