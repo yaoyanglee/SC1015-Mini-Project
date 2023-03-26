@@ -102,13 +102,19 @@ Since our dataset consisted of many variables, it had a high dimensionality, whi
 3. Linear Regression \
    Linear Regression is a simple but effective way to analyse the used price with respect to multiple variables. after the regression models above, we were curious if the used priced had a linear relationship with the dependent variables. Finding this is important, as a simple linear relationship to the predictors would allow buyers and sellers to easily understand the price of a used device based on comparisons to other devices. This allows for an intuitive understanding of the price. Furthermore, Linear Regressions are less computationally expensive compared to Decision Trees or Ensemble learning models. If a simple and accurate linear relationship could be established, prediction would remain accurate and much faster with a larger dataset in comparison to the one we are working with.
 
+   Due to high R squared value and low MSE, we decided to further our analysis of the linear regression model using Ridge and LASSO regressions.
+
 4. Ridge Regression \
    Ridge Regression is a model tuning method used to analyse any data that suffers from multicollinearity. Multicollinearity is the case when 1 predictor is highly linearly related to another predictor. If simple linear regression is to study the effects of how each predictor affects the response, used price, then multicollinearity undermines this principle, as the predictors are not independent from each other. The regression coefficients are thus not uniquely determined, as changes in one feature results in changes in the response variable and another predictor variable. This results in an inaccurate regression model.
 
    Thus we aim to use Ridge Regression which performs L2 regularization to reduce multicollinearity, as the effects of insignificant predictors and multicollinear predictors are reduced.
 
 5. Lasso Regression \
+   Lasso Regression is similar to Ridge Regression with the difference that instead of taking the square of the coefficients as the penalty factor, the magnitude of the coefficients are used instead, which is also known as L1 regularization. The reasons for using Lasso Regression are similar to Ridge Regression. We chose this model simply to examine the difference between the L1 and L2 regularization on the accuracy of the model.
 
-6. SVM Regression \
+Both Lasso and Ridge Regression are forms of hyperparameter tuning in order to derive a better linear regression model.
+
+6. Support Vector Regression (SVR) \
+   SVR tries to find a line, in this case called a Hyperplane, to fit the data. Its aim is to find a hyperplane that distinctly classifies the data points on either side of the hyerplane. We decided to include this regression model, as we saw some non-linear relationships within our data during EDA. Using strictly a linear model results in us having a less than accurate model. We therefore decided to fit a SVR on our dataset.
 
 ### 6. Data Driven Insights and Conclusions
