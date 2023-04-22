@@ -129,13 +129,15 @@ In conclusion, we explored different ML models in order to predict the price of 
 
 ### 7. References
 
-1. https://www.geeksforgeeks.org/standardscaler-minmaxscaler-and-robustscaler-techniques-ml/
-2. https://guhanesvar.medium.com/feature-selection-based-on-mutual-information-gain-for-classification-and-regression-d0f86ea5262a
-3. https://www.datatechnotes.com/2021/02/seleckbest-feature-selection-example-in-python.html
-4. https://towardsdatascience.com/a-one-stop-shop-for-principal-component-analysis-5582fb7e0a9c
-5. https://www.upgrad.com/blog/pros-and-cons-of-decision-tree-regression-in-machine-learning/
-6. https://machinelearningmastery.com/parametric-and-nonparametric-machine-learning-algorithms/
-7. https://towardsdatascience.com/random-forest-regression-5f605132d19d
-8. https://www.mygreatlearning.com/blog/what-is-ridge-regression/
-9. https://medium.com/future-vision/collinearity-what-it-means-why-its-bad-and-how-does-it-affect-other-models-94e1db984168
-10. https://www.datacamp.com/tutorial/tutorial-lasso-ridge-regression
+1. https://www.digitalocean.com/community/tutorials/pandas-dropna-drop-null-na-values-from-dataframe
+2. https://www.geeksforgeeks.org/ml-one-hot-encoding-of-datasets-in-python/
+3. https://www.geeksforgeeks.org/standardscaler-minmaxscaler-and-robustscaler-techniques-ml/
+4. https://guhanesvar.medium.com/feature-selection-based-on-mutual-information-gain-for-classification-and-regression-d0f86ea5262a
+5. https://www.datatechnotes.com/2021/02/seleckbest-feature-selection-example-in-python.html
+6. https://towardsdatascience.com/a-one-stop-shop-for-principal-component-analysis-5582fb7e0a9c
+7. https://www.upgrad.com/blog/pros-and-cons-of-decision-tree-regression-in-machine-learning/
+8. https://machinelearningmastery.com/parametric-and-nonparametric-machine-learning-algorithms/
+9. https://towardsdatascience.com/random-forest-regression-5f605132d19d
+10. https://www.mygreatlearning.com/blog/what-is-ridge-regression/
+11. https://medium.com/future-vision/collinearity-what-it-means-why-its-bad-and-how-does-it-affect-other-models-94e1db984168
+12. https://www.datacamp.com/tutorial/tutorial-lasso-ridge-regression
