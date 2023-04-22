@@ -125,4 +125,17 @@ A corollary to this was the importance of a good data preparation pipeline. In t
 
 We learned that if the relationship between variables are non-linear, we can use mutual info regression to estimate the mutual information between two variables, which can capture non-linear dependencies. We then selected the best variables based on the MIR scores. After that, we learned that we could use PCA to reduce dimensionality and computational complexity.
 
+<<<<<<< Updated upstream
 In conclusion, we explored different ML models in order to predict the price of used devices based on various features. Our data-driven insights can help buyers and sellers make informed decisions in the competitive used device market, ensuring that they get the best value for their money. In fact, the models follow a simple linear regression the best. Though this does not naturally follow from the raw unprocessed data, an intuition can be made, allowing for a simple understanding of used price based on current phone specifications. The model can also be easily updated with new data as the market evolves, making it a valuable tool for all stakeholders in the used device ecosystem. Future work could involve exploring additional features, such as battery life, to further improve the model's accuracy and integrating the model into a user-friendly application for easy access by consumers. We can also attempt to evaluate whether or not a used phone with a particular price is "worth it" or not. With the data, we predicted that we could develop a simple platform for users to evaluate if their price for a particular phone is reasonable or not, and thus "worth it" or not.
+=======
+In conclusion, we explored different ML models in order to predict the price of used devices based on various features. Our data-driven insights can help buyers and sellers make informed decisions in the competitive used device market, ensuring that they get the best value for their money. In fact, the models follow a simple linear regression the best. Though this does not naturally follow from the raw unprocessed data, an intuition can be made, allowing for a simple understanding of used price based on current phone specifications. The model can also be easily updated with new data as the market evolves, making it a valuable tool for all stakeholders in the used device ecosystem. Future work could involve exploring additional features, such as battery life, to further improve the model's accuracy and integrating the model into a user-friendly application for easy access by consumers. We can also attempt to evaluate whether or not a used phone with a particular price is "worth it" or not. With the data we predicted we could develop a simple platform for users to evaluate if their price for a particular phone is reasonable or not, and thus "worth it" or not.
+
+### 7. References
+
+1. https://www.upgrad.com/blog/pros-and-cons-of-decision-tree-regression-in-machine-learning/
+2. https://machinelearningmastery.com/parametric-and-nonparametric-machine-learning-algorithms/
+3. https://towardsdatascience.com/random-forest-regression-5f605132d19d
+4. https://www.mygreatlearning.com/blog/what-is-ridge-regression/
+5. https://medium.com/future-vision/collinearity-what-it-means-why-its-bad-and-how-does-it-affect-other-models-94e1db984168
+6. https://www.datacamp.com/tutorial/tutorial-lasso-ridge-regression
+>>>>>>> Stashed changes
